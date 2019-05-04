@@ -24,20 +24,20 @@ exports.writingCommandEthereum = (generator, answers) => {
     const foldersPath = {
         clientJS: {
             source: [
-                '/client/public',
-                '/client/src',
-                '/client/eslintrc.json',
-                '/client/esdoc.json',
-                '/client/package.json',
-                '/client/README.md',
+                '/clientJS/public',
+                '/clientJS/src',
+                '/clientJS/eslintrc.json',
+                '/clientJS/esdoc.json',
+                '/clientJS/package.json',
+                '/clientJS/README.md',
             ],
             destination: [
-                '/client/public',
-                '/client/src',
-                '/client/.eslintrc.json',
-                '/client/.esdoc.json',
-                '/client/package.json',
-                '/client/README.md',
+                '/clientJS/public',
+                '/clientJS/src',
+                '/clientJS/.eslintrc.json',
+                '/clientJS/.esdoc.json',
+                '/clientJS/package.json',
+                '/clientJS/README.md',
             ],
         },
         clientTS: {
