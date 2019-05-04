@@ -1,0 +1,38 @@
+{
+    "name": "ethereum-side",
+    "version": "1.0.0",
+    "description": "Ethereum related app",
+    "license": "Apache-2.0",
+    "author": {
+        "name": "Bernardo Vieira",
+        "email": "bernardo@techhq.io",
+        "url": "https://techhq.io"
+    },
+    "engines": {
+        "node": ">= 10.12.0",
+        "npm": ">= 6.4.0",
+        "yarn": ">= 1.10.0"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "coverage": "solidity-coverage",
+        "solium": "solium -d contracts/"
+    },
+    "dependencies": {
+        "openzeppelin-solidity": "^2.1.0-rc.2",
+        "zos-lib": "^2.1.0-rc.0"
+    },
+    "devDependencies": {
+        "bignumber.js": "^8.0.1",
+        "eslint": "^5.12.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.2",
+        "eslint-plugin-react": "^7.12.3",
+        "ethlint": "^1.2.1",
+        "solidity-coverage": "https://github.com/obernardovieira/solidity-coverage.git#bf55aed45574cb0f75bf59097a19f2fbf1c43773",
+        "truffle": "^5.0.0"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "name": "generator-bonsai",
+    "version": "0.1.0-alpha",
+    "description": "A blockchain boilerplate generator from TechHQ to the world.",
+    "license": "Apache-2.0",
+    "author": {
+        "name": "Bernardo Vieira",
+        "email": "bernardo@techhq.io",
+        "url": "https://techhq.io"
+    },
+    "engines": {
+        "node": ">= 10.12.0",
+        "npm": ">= 6.4.0",
+        "yarn": ">= 1.10.0"
+    },
+    "homepage": "https://github.com/obernardovieira/generator-bonsai#readme",
+    "bugs": {
+        "url": "https://github.com/obernardovieira/generator-bonsai/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/obernardovieira/generator-bonsai.git"
+    },
+    "files": [
+        "app"
+    ],
+    "keywords": [
+        "yeoman-generator",
+        "techhq",
+        "hq20",
+        "blockchain",
+        "ethereum",
+        "boilerplate",
+        "react",
+        "dapp",
+        "solidity",
+        "smart-contracts"
+    ],
+    "dependencies": {
+        "slang": "0.3.0",
+        "yeoman-generator": "3.2.0"
+    },
+    "devDependencies": {
+        "eslint": "5.12.0",
+        "eslint-config-airbnb": "17.1.0",
+        "eslint-plugin-import": "2.14.0",
+        "eslint-plugin-jsx-a11y": "6.1.2",
+        "eslint-plugin-react": "7.12.3"
+    }
+}

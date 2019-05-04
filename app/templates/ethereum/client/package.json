@@ -1,0 +1,46 @@
+{
+    "name": "client-side",
+    "version": "1.0.0",
+    "description": "Client to integrate with ethereum blockchain",
+    "license": "Apache-2.0",
+    "author": {
+        "name": "Bernardo Vieira",
+        "email": "bernardo@techhq.io",
+        "url": "https://techhq.io"
+    },
+    "engines": {
+        "node": ">= 10.12.0",
+        "npm": ">= 6.4.0",
+        "yarn": ">= 1.10.0"
+    },
+    "scripts": {
+        "coverage": "react-scripts test --env=jsdom --coverage",
+        "test": "react-scripts test --env=jsdom",
+        "docs": "esdoc",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "eject": "react-scripts eject",
+        "link-contracts": "run-script-os",
+        "link-contracts:linux:darwin": "cd src && ln -s ../../ethereum/build/contracts contracts",
+        "link-contracts:win32": "cd src && mklink \\D contracts ..\\..\\ethereum\\build\\contracts"
+    },
+    "dependencies": {
+        "bignumber.js": "^8.0.1",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
+        "react-scripts": "^1.1.4",
+        "truffle-contract": "4.0.0-next.0",
+        "web3": "1.0.0-beta.33"
+    },
+    "devDependencies": {
+        "esdoc": "^1.1.0",
+        "esdoc-jsx-plugin": "^1.0.0",
+        "esdoc-react-plugin": "^1.0.1",
+        "esdoc-standard-plugin": "^1.0.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.2",
+        "eslint-plugin-react": "^7.12.3",
+        "run-script-os": "^1.0.3"
+    }
+}
