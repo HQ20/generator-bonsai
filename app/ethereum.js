@@ -60,14 +60,14 @@ exports.writingCommandEthereum = (generator, answers) => {
         upgradableContracts: {
             source: [
                 '/ethereum/upgradable/contracts',
-                '/ethereum/upgradable/migrations',
+                '/ethereum/upgradable/migrations/.gitkeep',
                 '/ethereum/upgradable/test',
                 '/ethereum/upgradable/package.json',
                 '/ethereum/upgradable/watcher.js',
             ],
             destination: [
                 '/ethereum/contracts',
-                '/ethereum/migrations',
+                '/ethereum/migrations/.gitkeep',
                 '/ethereum/test',
                 '/ethereum/package.json',
                 '/ethereum/watcher.js',
@@ -109,7 +109,12 @@ exports.writingCommandEthereum = (generator, answers) => {
     }
     // copy either upgradabale contracts or not
     if (answers['needsUpgradable'] === true) {
-        //
+        for (let x = 0; x < foldersPath.upgradableContracts.source.length; x += 1) {
+            generator.fs.copy(
+                path.join(templateFolder, foldersPath.upgradableContracts.source[x]),
+                path.join(destinationFolderRoot, foldersPath.upgradableContracts.destination[x]),
+            );
+        }
     } else {
         for (let x = 0; x < foldersPath.simpleContracts.source.length; x += 1) {
             generator.fs.copy(
