@@ -76,14 +76,14 @@ exports.writingCommandEthereum = (generator, answers) => {
         common: {
             source: [
                 '/editorconfig',
-                '/ethereum/eslintrc.json',
+                '/eslintrc.json',
                 '/gitattributes',
                 '/gitignore',
-                '/ethereum/README.md',
-                '/ethereum/solcover.js',
-                '/ethereum/soliumignore',
-                '/ethereum/soliumrc.json',
-                '/ethereum/truffle-config.js',
+                '/README.md',
+                '/solcover.js',
+                '/soliumignore',
+                '/soliumrc.json',
+                '/truffle-config.js',
             ],
             destination: [
                 '/.editorconfig',
