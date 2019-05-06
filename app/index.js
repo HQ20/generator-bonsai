@@ -15,7 +15,7 @@ module.exports = class extends Generator {
             type: 'input',
             name: 'name',
             message: 'Your project name',
-            default: this.appname,  // Default to current folder name
+            default: this.appname, // Default to current folder name
         }, {
             type: 'list',
             name: 'blockchain',
@@ -30,17 +30,13 @@ module.exports = class extends Generator {
             }],
             default: this.blockchainplatform,
         }, {
-            when: (response) => {
-                return response.blockchain === 'ext-command-ethereum';
-            },
+            when: response => response.blockchain === 'ext-command-ethereum',
             type: 'confirm',
             name: 'needsFrontend',
             message: 'Do you need frontend?',
             default: this.needsfe,
         }, {
-            when: (response) => {
-                return response.blockchain === 'ext-command-ethereum';
-            },
+            when: response => response.blockchain === 'ext-command-ethereum',
             type: 'confirm',
             name: 'needsUpgradable',
             message: 'Do you need the contracts upgradable?',

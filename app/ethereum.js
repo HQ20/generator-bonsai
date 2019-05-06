@@ -97,9 +97,9 @@ exports.writingCommandEthereum = (generator, answers) => {
                 '/ethereum/truffle-config.js',
             ],
         },
-    }
+    };
     // copy frontend if necessary
-    if (answers['needsFrontend'] === true) {
+    if (answers.needsFrontend === true) {
         for (let x = 0; x < foldersPath.clientJS.source.length; x += 1) {
             generator.fs.copy(
                 path.join(templateFolder, foldersPath.clientJS.source[x]),
@@ -108,7 +108,7 @@ exports.writingCommandEthereum = (generator, answers) => {
         }
     }
     // copy either upgradabale contracts or not
-    if (answers['needsUpgradable'] === true) {
+    if (answers.needsUpgradable === true) {
         for (let x = 0; x < foldersPath.upgradableContracts.source.length; x += 1) {
             generator.fs.copy(
                 path.join(templateFolder, foldersPath.upgradableContracts.source[x]),
@@ -130,4 +130,4 @@ exports.writingCommandEthereum = (generator, answers) => {
             path.join(destinationFolderRoot, foldersPath.common.destination[x]),
         );
     }
-}
+};
