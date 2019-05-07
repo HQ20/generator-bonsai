@@ -27,6 +27,10 @@ module.exports = class extends Generator {
             {
                 name: 'Quorum',
                 value: 'ext-command-quorum',
+            },
+            {
+                name: 'Hyperledger Fabric',
+                value: 'ext-command-hyperledger-fabric',
             }],
             default: this.blockchainplatform,
         }, {
@@ -53,6 +57,8 @@ module.exports = class extends Generator {
         if (this.answers.blockchain === 'ext-command-ethereum') {
             Ethereum.writingCommandEthereum(generator, this.answers);
         } else if (this.answers.blockchain === 'ext-command-quorum') {
+            this.log('Not yet ready!');
+        } else if (this.answers.blockchain === 'ext-command-hyperledger-fabric') {
             this.log('Not yet ready!');
         }
     }
