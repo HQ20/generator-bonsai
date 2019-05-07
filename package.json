@@ -40,7 +40,7 @@
         "test": "mocha",
         "coverage": "nyc --reporter=html --reporter=text npm test",
         "coverage-ci": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
-        "lint": "eslint src/*.js ."
+        "lint": "eslint \"app/ethereum.js\" \"app/index.js\""
     },
     "dependencies": {
         "slang": "0.3.0",
