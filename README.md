@@ -4,6 +4,9 @@
     <img height="300" src="bonsai.jpg">
 </p>
 
+[DEPRECATED]
+This project was deprecated because github now have [templates](https://help.github.com/en/articles/creating-a-template-repository).
+
 Bonsai is *"an Asian art form using cultivation techniques to produce small trees in containers that mimic the shape and scale of full size trees"* - [Wikipedia](https://en.wikipedia.org/wiki/Bonsai)
 
 This generator mimics the shape of a big project. As we come along we had to rebuild the same over and over, so we decided to create a generate to help us.
